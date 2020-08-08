@@ -1,0 +1,176 @@
+@import 'config';
+@import 'utilities';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #33364d;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+  font-family: 'Lato', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+// Navbar
+nav {
+  display: flex;
+  align-items: center;
+  // justify-content: flex-start;
+  // padding-right: 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 4rem;
+  top: 0;
+  border-bottom: solid 5px $primary-color;
+  opacity: 1;
+
+  img {
+    height: 4rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    margin-left: 2rem;
+  }
+
+  ul {
+    margin-left: 7rem;
+    display: inline-flex;
+    justify-content: flex-start;
+  }
+
+  a {
+    color: #fff;
+    padding: 0 0.75rem;
+    margin: 0 0.75rem;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .current a {
+    color: lighten($primary-color, 15%);
+    font-weight: bold;
+  }
+
+  input[type='text'] {
+    border: 1px solid #dedede;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
+    margin-left: 3rem;
+    width: 20rem;
+  }
+
+  .search-btn {
+    cursor: pointer;
+    border: 1px solid #dedede;
+    border-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 4px 6px;
+    margin: 0;
+  }
+}
+
+// Main Container
+.container {
+  width: 90%;
+  margin: auto;
+  margin-top: 4.5rem;
+
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0 -5px;
+  }
+
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    height: 100%;
+    margin-bottom: 1rem;
+
+    p,
+    h3 {
+      text-align: left;
+    }
+  }
+
+  /* Float three columns side by side */
+  .sides {
+    float: left;
+    width: 20%;
+    padding: 0 30px;
+
+    .round-img {
+      border-radius: 50%;
+    }
+
+    .infographics img {
+      max-width: 70%;
+      padding: 1rem;
+    }
+
+    .advertisements img {
+      max-width: 100%;
+      padding: 1rem;
+    }
+  }
+
+  .middle {
+    float: left;
+    width: 60%;
+    padding: 0 10px;
+
+    .wrapper {
+      margin: 0 auto;
+      width: inherit;
+    }
+
+    video {
+      width: 100%;
+    }
+
+    .post-info {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: $primary-color;
+    }
+
+    .rating {
+      display: inline-flex;
+      font-family: 'Rowdies', cursive;
+      color: #a19f9f;
+      font-size: 1rem;
+      margin: -1rem;
+    }
+
+    #rating1,
+    #rating2,
+    #rating3,
+    #rating4,
+    #rating5 {
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/2ade1d298b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Taqzila</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <a href="index.html">
+        <img src="img/book unlock -ve icon.svg " alt="Logo" />
+      </a>
+
+      <ul>
+        <li class="current">
+          <a href="home.html"
+            ><i class="fas fa-scroll"></i>
+            <span class="hide-sm"> Feed</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="profile.html"
+            ><i class="fas fa-user"></i><span class="hide-sm"> Profile</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="trending.html"
+            ><i class="fab fa-gripfire"></i><span class="hide-sm"> Trending</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="messages.html"
+            ><i class="far fa-comments"></i><span class="hide-sm"> Messages</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="discussion.html"
+            ><i class="fas fa-users"></i><span class="hide-sm"> Discussions</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="login.html"
+            ><i class="fas fa-sign-out-alt"></i><span class="hide-sm"> Logout</span>
+          </a>
+        </li>
+
+        <input type="text" id="search" placeholder="Topic, Author or Keywords" />
+        <button class="search-btn" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </ul>
+    </nav>
+
+    <section class="container">
+      <div class="row">
+        <div class="sides">
+          <div class="card">
+            <a href="profile.html">
+              <img
+                class="round-img"
+                src="https://randomuser.me/api/portraits/men/50.jpg"
+                alt="Random User Image"
+              />
+            </a>
+
+            <h3>Topics of Interest</h3>
+            <br />
+
+            <p>
+              Renewable Energy <br />
+              Microfluidics <br />
+              Arduino <br />
+              Automated Microscopy<br />
+              Sickle Cell Diseases<br />
+              Vortex Hydro Power <br />
+              WEF Nexus <br />
+              Sustainable Development Goals <br />
+              Energy Storage<br />
+              Pumped Hydro<br />
+              Additive Manufacturing<br />
+            </p>
+            <br />
+
+            <h3>Infographics</h3>
+            <div class="infographics">
+              <img src="img/pie chart.svg" alt="Pie chart" />
+              <img src="img/graph squares.svg" alt="Graph Squares" />
+              <img src="img/graph.svg" alt="Graph" />
+            </div>
+          </div>
+        </div>
+
+        <div class="middle">
+          <div id="card1" class="card">
+            <h3>
+              Pushing the envelope: Switzerland's approach to unlocking hidden hydropower potential
+            </h3>
+            <p><strong>Authors:</strong> Name1, Name2 & Name3</p>
+            <p><strong>Topic:</strong> Renewable energy, hydropower</p>
+            <br />
+            <div class="wrapper">
+              <video src="img/video.mp4" controls></video>
+            </div>
+
+            <section class="post-info">
+              <div class="critic-rating">
+                <h4>Critic Rating</h4>
+                <div class="rating">
+                  <h3 id="rating1" class="rating-bars">I</h3>
+                  <h3 id="rating2" class="rating-bars">I</h3>
+                  <h3 id="rating3" class="rating-bars">I</h3>
+                  <h3 id="rating4" class="rating-bars">I</h3>
+                  <h3 id="rating5" class="rating-bars">I</h3>
+                  <h3 id="rating6" class="rating-bars">I</h3>
+                  <h3 id="rating7" class="rating-bars">I</h3>
+                  <h3 id="rating8" class="rating-bars">I</h3>
+                  <h3 id="rating9" class="rating-bars">I</h3>
+                  <h3 id="rating10" class="rating-bars">I</h3>
+                </div>
+                <!-- <h3>5</h3> -->
+              </div>
+
+              <div class="user-rating">
+                <h4>User Rating</h4>
+                <div class="rating">
+                  <h3 id="rating1" class="rating-bars">I</h3>
+                  <h3 id="rating2" class="rating-bars">I</h3>
+                  <h3 id="rating3" class="rating-bars">I</h3>
+                  <h3 id="rating4" class="rating-bars">I</h3>
+                  <h3 id="rating5" class="rating-bars">I</h3>
+                  <h3 id="rating6" class="rating-bars">I</h3>
+                  <h3 id="rating7" class="rating-bars">I</h3>
+                  <h3 id="rating8" class="rating-bars">I</h3>
+                  <h3 id="rating9" class="rating-bars">I</h3>
+                  <h3 id="rating10" class="rating-bars">I</h3>
+                </div>
+                <!-- <h3>5</h3> -->
+              </div>
+
+              <div><i class="fas fa-thumbs-up"></i><span class="hide-sm"> 100 </span></div>
+              <div><i class="fas fa-thumbs-down"></i><span class="hide-sm"> 40 </span></div>
+              <div>
+                <button class="btn">
+                  <i class="fas fa-users"></i><span class="hide-sm"> Discussions </span>
+                </button>
+              </div>
+              <div><span> 233 views</span></div>
+            </section>
+          </div>
+
+          <div id="card1" class="card">
+            <h3>
+              Pushing the envelope: Switzerland's approach to unlocking hidden hydropower potential
+            </h3>
+            <p><strong>Authors:</strong> Name1, Name2 & Name3</p>
+            <p><strong>Topic:</strong> Renewable energy, hydropower</p>
+            <br />
+            <div class="wrapper">
+              <video src="img/video.mp4" controls></video>
+            </div>
+
+            <section class="post-info">
+              <div class="critic-rating">
+                <h4>Critic Rating</h4>
+                <div class="rating">
+                  <h3 id="rating1" class="rating-bars">I</h3>
+                  <h3 id="rating2" class="rating-bars">I</h3>
+                  <h3 id="rating3" class="rating-bars">I</h3>
+                  <h3 id="rating4" class="rating-bars">I</h3>
+                  <h3 id="rating5" class="rating-bars">I</h3>
+                  <h3 id="rating6" class="rating-bars">I</h3>
+                  <h3 id="rating7" class="rating-bars">I</h3>
+                  <h3 id="rating8" class="rating-bars">I</h3>
+                  <h3 id="rating9" class="rating-bars">I</h3>
+                  <h3 id="rating10" class="rating-bars">I</h3>
+                </div>
+                <!-- <h3>5</h3> -->
+              </div>
+
+              <div class="user-rating">
+                <h4>User Rating</h4>
+                <div class="rating">
+                  <h3 id="rating1" class="rating-bars">I</h3>
+                  <h3 id="rating2" class="rating-bars">I</h3>
+                  <h3 id="rating3" class="rating-bars">I</h3>
+                  <h3 id="rating4" class="rating-bars">I</h3>
+                  <h3 id="rating5" class="rating-bars">I</h3>
+                  <h3 id="rating6" class="rating-bars">I</h3>
+                  <h3 id="rating7" class="rating-bars">I</h3>
+                  <h3 id="rating8" class="rating-bars">I</h3>
+                  <h3 id="rating9" class="rating-bars">I</h3>
+                  <h3 id="rating10" class="rating-bars">I</h3>
+                </div>
+                <!-- <h3>5</h3> -->
+              </div>
+
+              <div><i class="fas fa-thumbs-up"></i><span class="hide-sm"> 100 </span></div>
+              <div><i class="fas fa-thumbs-down"></i><span class="hide-sm"> 40 </span></div>
+              <div>
+                <button class="btn">
+                  <i class="fas fa-users"></i><span class="hide-sm"> Discussions </span>
+                </button>
+              </div>
+              <div><span> 233 views</span></div>
+            </section>
+          </div>
+
+          <div id="card1" class="card">
+            <h3>
+              Pushing the envelope: Switzerland's approach to unlocking hidden hydropower potential
+            </h3>
+            <p><strong>Authors:</strong> Name1, Name2 & Name3</p>
+            <p><strong>Topic:</strong> Renewable energy, hydropower</p>
+            <br />
+            <div class="wrapper">
+              <video src="img/video.mp4" controls></video>
+            </div>
+
+            <section class="post-info">
+              <div class="critic-rating">
+                <h4>Critic Rating</h4>
+                <div class="rating">
+                  <h3 id="rating1" class="rating-bars">I</h3>
+                  <h3 id="rating2" class="rating-bars">I</h3>
+                  <h3 id="rating3" class="rating-bars">I</h3>
+                  <h3 id="rating4" class="rating-bars">I</h3>
+                  <h3 id="rating5" class="rating-bars">I</h3>
+                  <h3 id="rating6" class="rating-bars">I</h3>
+                  <h3 id="rating7" class="rating-bars">I</h3>
+                  <h3 id="rating8" class="rating-bars">I</h3>
+                  <h3 id="rating9" class="rating-bars">I</h3>
+                  <h3 id="rating10" class="rating-bars">I</h3>
+                </div>
+                <!-- <h3>5</h3> -->
+              </div>
+
+              <div class="user-rating">
+                <h4>User Rating</h4>
+                <div class="rating">
+                  <h3 id="rating1" class="rating-bars">I</h3>
+                  <h3 id="rating2" class="rating-bars">I</h3>
+                  <h3 id="rating3" class="rating-bars">I</h3>
+                  <h3 id="rating4" class="rating-bars">I</h3>
+                  <h3 id="rating5" class="rating-bars">I</h3>
+                  <h3 id="rating6" class="rating-bars">I</h3>
+                  <h3 id="rating7" class="rating-bars">I</h3>
+                  <h3 id="rating8" class="rating-bars">I</h3>
+                  <h3 id="rating9" class="rating-bars">I</h3>
+                  <h3 id="rating10" class="rating-bars">I</h3>
+                </div>
+                <!-- <h3>5</h3> -->
+              </div>
+
+              <div><i class="fas fa-thumbs-up"></i><span class="hide-sm"> 100 </span></div>
+              <div><i class="fas fa-thumbs-down"></i><span class="hide-sm"> 40 </span></div>
+              <div>
+                <button class="btn">
+                  <i class="fas fa-users"></i><span class="hide-sm"> Discussions </span>
+                </button>
+              </div>
+              <div><span> 233 views</span></div>
+            </section>
+          </div>
+
+          <div id="card1" class="card">
+            <h3>
+              Pushing the envelope: Switzerland's approach to unlocking hidden hydropower potential
+            </h3>
+            <p><strong>Authors:</strong> Name1, Name2 & Name3</p>
+            <p><strong>Topic:</strong> Renewable energy, hydropower</p>
+            <br />
+            <div class="wrapper">
+              <video src="img/video.mp4" controls></video>
+            </div>
+
+            <section class="post-info">
+              <div class="critic-rating">
+                <h4>Critic Rating</h4>
+                <div class="rating">
+                  <h3 id="rating1" class="rating-bars">I</h3>
+                  <h3 id="rating2" class="rating-bars">I</h3>
+                  <h3 id="rating3" class="rating-bars">I</h3>
+                  <h3 id="rating4" class="rating-bars">I</h3>
+                  <h3 id="rating5" class="rating-bars">I</h3>
+                  <h3 id="rating6" class="rating-bars">I</h3>
+                  <h3 id="rating7" class="rating-bars">I</h3>
+                  <h3 id="rating8" class="rating-bars">I</h3>
+                  <h3 id="rating9" class="rating-bars">I</h3>
+                  <h3 id="rating10" class="rating-bars">I</h3>
+                </div>
+                <!-- <h3>5</h3> -->
+              </div>
+
+              <div class="user-rating">
+                <h4>User Rating</h4>
+                <div class="rating">
+                  <h3 id="rating1" class="rating-bars">I</h3>
+                  <h3 id="rating2" class="rating-bars">I</h3>
+                  <h3 id="rating3" class="rating-bars">I</h3>
+                  <h3 id="rating4" class="rating-bars">I</h3>
+                  <h3 id="rating5" class="rating-bars">I</h3>
+                  <h3 id="rating6" class="rating-bars">I</h3>
+                  <h3 id="rating7" class="rating-bars">I</h3>
+                  <h3 id="rating8" class="rating-bars">I</h3>
+                  <h3 id="rating9" class="rating-bars">I</h3>
+                  <h3 id="rating10" class="rating-bars">I</h3>
+                </div>
+                <!-- <h3>5</h3> -->
+              </div>
+
+              <div><i class="fas fa-thumbs-up"></i><span class="hide-sm"> 100 </span></div>
+              <div><i class="fas fa-thumbs-down"></i><span class="hide-sm"> 40 </span></div>
+              <div>
+                <button class="btn">
+                  <i class="fas fa-users"></i><span class="hide-sm"> Discussions </span>
+                </button>
+              </div>
+              <div><span> 233 views</span></div>
+            </section>
+          </div>
+
+          <div id="card1" class="card">
+            <h3>
+              Pushing the envelope: Switzerland's approach to unlocking hidden hydropower potential
+            </h3>
+            <p><strong>Authors:</strong> Name1, Name2 & Name3</p>
+            <p><strong>Topic:</strong> Renewable energy, hydropower</p>
+            <br />
+            <div class="wrapper">
+              <video src="img/video.mp4" controls></video>
+            </div>
+
+            <section class="post-info">
+              <div class="critic-rating">
+                <h4>Critic Rating</h4>
+                <div class="rating">
+                  <h3 id="rating1" class="rating-bars">I</h3>
+                  <h3 id="rating2" class="rating-bars">I</h3>
+                  <h3 id="rating3" class="rating-bars">I</h3>
+                  <h3 id="rating4" class="rating-bars">I</h3>
+                  <h3 id="rating5" class="rating-bars">I</h3>
+                  <h3 id="rating6" class="rating-bars">I</h3>
+                  <h3 id="rating7" class="rating-bars">I</h3>
+                  <h3 id="rating8" class="rating-bars">I</h3>
+                  <h3 id="rating9" class="rating-bars">I</h3>
+                  <h3 id="rating10" class="rating-bars">I</h3>
+                </div>
+                <!-- <h3>5</h3> -->
+              </div>
+
+              <div class="user-rating">
+                <h4>User Rating</h4>
+                <div class="rating">
+                  <h3 id="rating1" class="rating-bars">I</h3>
+                  <h3 id="rating2" class="rating-bars">I</h3>
+                  <h3 id="rating3" class="rating-bars">I</h3>
+                  <h3 id="rating4" class="rating-bars">I</h3>
+                  <h3 id="rating5" class="rating-bars">I</h3>
+                  <h3 id="rating6" class="rating-bars">I</h3>
+                  <h3 id="rating7" class="rating-bars">I</h3>
+                  <h3 id="rating8" class="rating-bars">I</h3>
+                  <h3 id="rating9" class="rating-bars">I</h3>
+                  <h3 id="rating10" class="rating-bars">I</h3>
+                </div>
+                <!-- <h3>5</h3> -->
+              </div>
+
+              <div><i class="fas fa-thumbs-up"></i><span class="hide-sm"> 100 </span></div>
+              <div><i class="fas fa-thumbs-down"></i><span class="hide-sm"> 40 </span></div>
+              <div>
+                <button class="btn">
+                  <i class="fas fa-users"></i><span class="hide-sm"> Discussions </span>
+                </button>
+              </div>
+              <div><span> 233 views</span></div>
+            </section>
+          </div>
+        </div>
+
+        <div class="sides">
+          <div class="card">
+            <h3>Advertisements</h3>
+            <div class="advertisements">
+              <img src="img/ad sample.svg" alt="Pie chart" />
+              <img src="img/ad sample.svg" alt="Pie chart" />
+              <img src="img/ad sample.svg" alt="Pie chart" />
+              <img src="img/ad sample.svg" alt="Pie chart" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

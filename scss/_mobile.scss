@@ -18,9 +18,27 @@
     }
   }
 
+  // Profile Banner
+  .profile-banner {
+    display: inline-block;
+
+    .affiliation {
+      h2,
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+
   // .container {
-  .container .col-middle {
-    flex-basis: 90%;
+  .container {
+    .col-middle {
+      flex-basis: 90%;
+    }
+
+    .rating {
+      font-size: 0.7rem;
+    }
   }
 
   // Text Styles

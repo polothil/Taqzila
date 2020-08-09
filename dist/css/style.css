@@ -415,8 +415,18 @@ nav .search-btn {
   nav .search {
     display: none;
   }
+  .profile-banner {
+    display: inline-block;
+  }
+  .profile-banner .affiliation h2,
+  .profile-banner .affiliation h3 {
+    text-align: center;
+  }
   .container .col-middle {
     flex-basis: 90%;
+  }
+  .container .rating {
+    font-size: 0.7rem;
   }
   .x-large {
     font-size: 3rem;

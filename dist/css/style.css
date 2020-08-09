@@ -94,6 +94,7 @@ body {
   line-height: 1.6;
   background-color: #fff;
   color: #33364d;
+  margin-top: 4.5rem;
 }
 
 a {
@@ -106,6 +107,24 @@ ul {
   list-style: none;
 }
 
+.round-img {
+  width: inherit;
+  border-radius: 50%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+}
+
+.card p {
+  text-align: left;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -115,6 +134,7 @@ nav {
   position: fixed;
   top: 0;
   border-bottom: solid 3px #007575;
+  max-height: 3.5rem;
 }
 
 nav .logo {
@@ -123,7 +143,7 @@ nav .logo {
 }
 
 nav img {
-  max-height: 4rem;
+  max-height: 3.5rem;
   margin-left: 1rem;
 }
 
@@ -134,7 +154,7 @@ nav .links {
 nav ul {
   display: flex;
   justify-content: space-around;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 nav a {
@@ -178,22 +198,9 @@ nav .search-btn {
 }
 
 .container {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 4rem;
-}
-
-.container .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-  margin-bottom: 1rem;
-  border-radius: 0.3rem;
-}
-
-.container .card p {
-  text-align: left;
 }
 
 .container .col-left,
@@ -203,8 +210,10 @@ nav .search-btn {
 
 .container .col-left .infographics,
 .container .col-left .sticky-dummy,
+.container .col-left .statistics,
 .container .col-right .infographics,
-.container .col-right .sticky-dummy {
+.container .col-right .sticky-dummy,
+.container .col-right .statistics {
   align-self: baseline;
   position: sticky;
   top: 4rem;
@@ -217,15 +226,24 @@ nav .search-btn {
   width: 50%;
 }
 
-.container .col-left .round-img,
-.container .col-right .round-img {
-  width: inherit;
-  border-radius: 50%;
-}
-
 .container .col-left .content-right img,
 .container .col-right .content-right img {
   width: 90%;
+}
+
+.container .col-left table,
+.container .col-right table {
+  border-spacing: 20px;
+}
+
+.container .col-left table td,
+.container .col-right table td {
+  text-align: left;
+}
+
+.container .col-left table td:nth-child(1),
+.container .col-right table td:nth-child(1) {
+  border-right: 1px solid #333;
 }
 
 .container .col-middle {
@@ -284,6 +302,103 @@ nav .search-btn {
 .container .col-middle .user-rating #rating6,
 .container .col-middle .user-rating #rating7 {
   color: red;
+}
+
+.profile-banner {
+  margin-left: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 96%;
+}
+
+.profile-banner div {
+  padding: 0 3rem;
+}
+
+.profile-banner .checked {
+  color: orange;
+}
+
+.profile-banner .affiliation h3,
+.profile-banner .affiliation h2 {
+  text-align: right;
+}
+
+.publication-expert-rating,
+.publication-user-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.publication-expert-rating .rating,
+.publication-user-rating .rating {
+  display: inline-flex;
+  font-family: 'Rowdies', cursive;
+  color: #a19f9f;
+  font-size: 2rem;
+  margin: -1rem;
+}
+
+.publication-expert-rating #pcr1,
+.publication-expert-rating #pcr2,
+.publication-expert-rating #pcr3,
+.publication-expert-rating #pcr4,
+.publication-expert-rating #pcr5,
+.publication-user-rating #pcr1,
+.publication-user-rating #pcr2,
+.publication-user-rating #pcr3,
+.publication-user-rating #pcr4,
+.publication-user-rating #pcr5 {
+  color: red;
+}
+
+.publication-expert-rating #pur1,
+.publication-expert-rating #pur2,
+.publication-expert-rating #pur3,
+.publication-expert-rating #pur4,
+.publication-expert-rating #pur5,
+.publication-expert-rating #pur6,
+.publication-expert-rating #pur7,
+.publication-user-rating #pur1,
+.publication-user-rating #pur2,
+.publication-user-rating #pur3,
+.publication-user-rating #pur4,
+.publication-user-rating #pur5,
+.publication-user-rating #pur6,
+.publication-user-rating #pur7 {
+  color: red;
+}
+
+.rating-breakup {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #a19f9f;
+}
+
+.rating-breakup .meter {
+  flex-basis: 60%;
+  height: 1rem;
+  /* Can be anything */
+  position: relative;
+  background: #a19f9f;
+  border-radius: 0.5rem;
+}
+
+.rating-breakup .meter span {
+  display: block;
+  height: 100%;
+  background-color: #51567b;
+  border-radius: 0.5rem;
+}
+
+.expert-rating-breakup .meter span {
+  display: block;
+  height: 100%;
+  background-color: #007575;
+  border-radius: 0.5rem;
 }
 
 @media all and (max-width: 800px) {

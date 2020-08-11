@@ -39,8 +39,13 @@ ul {
   margin-bottom: 1rem;
   border-radius: 0.3rem;
 
-  p {
+  p,
+  h3 {
     text-align: left;
+  }
+
+  h2 {
+    padding: 0 6rem;
   }
 }
 
@@ -132,7 +137,8 @@ nav {
 
     .infographics,
     .sticky-dummy,
-    .statistics {
+    .statistics,
+    .post-pub {
       align-self: baseline;
       position: -webkit-sticky;
       position: sticky;
@@ -148,6 +154,15 @@ nav {
       width: 90%;
     }
 
+    a {
+      color: #333;
+
+      &:hover {
+        color: $primary-color;
+        font-weight: bold;
+      }
+    }
+
     // Table
 
     table {
@@ -160,6 +175,69 @@ nav {
       td:nth-child(1) {
         border-right: 1px solid #333;
       }
+    }
+
+    // Publication Page Rating
+    .publication-expert-rating,
+    .publication-user-rating {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .rating {
+        display: inline-flex;
+        font-family: 'Rowdies', cursive;
+        color: #a19f9f;
+        font-size: 2rem;
+        margin: -1rem;
+      }
+
+      #pcr1,
+      #pcr2,
+      #pcr3,
+      #pcr4,
+      #pcr5 {
+        color: red;
+      }
+
+      #pur1,
+      #pur2,
+      #pur3,
+      #pur4,
+      #pur5,
+      #pur6,
+      #pur7 {
+        color: red;
+      }
+    }
+
+    .rating-breakup {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      border-bottom: 1px solid #a19f9f;
+
+      .meter {
+        flex-basis: 60%;
+        height: 1rem; /* Can be anything */
+        position: relative;
+        background: #a19f9f;
+        border-radius: 0.5rem;
+
+        span {
+          display: block;
+          height: 100%;
+          background-color: lighten($dark-color, 15%);
+          border-radius: 0.5rem;
+        }
+      }
+    }
+
+    .expert-rating-breakup .meter span {
+      display: block;
+      height: 100%;
+      background-color: $primary-color;
+      border-radius: 0.5rem;
     }
   }
 
@@ -177,6 +255,16 @@ nav {
       width: 100%;
       height: auto;
       border-radius: 0.3rem;
+    }
+
+    img {
+      width: 80%;
+    }
+
+    ol li {
+      text-align: left;
+      padding-left: 3rem;
+      margin-left: 1rem;
     }
 
     .post-info {
@@ -249,69 +337,6 @@ nav {
       text-align: right;
     }
   }
-}
-
-// Publication Page Rating
-.publication-expert-rating,
-.publication-user-rating {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-
-  .rating {
-    display: inline-flex;
-    font-family: 'Rowdies', cursive;
-    color: #a19f9f;
-    font-size: 2rem;
-    margin: -1rem;
-  }
-
-  #pcr1,
-  #pcr2,
-  #pcr3,
-  #pcr4,
-  #pcr5 {
-    color: red;
-  }
-
-  #pur1,
-  #pur2,
-  #pur3,
-  #pur4,
-  #pur5,
-  #pur6,
-  #pur7 {
-    color: red;
-  }
-}
-
-.rating-breakup {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border-bottom: 1px solid #a19f9f;
-
-  .meter {
-    flex-basis: 60%;
-    height: 1rem; /* Can be anything */
-    position: relative;
-    background: #a19f9f;
-    border-radius: 0.5rem;
-
-    span {
-      display: block;
-      height: 100%;
-      background-color: lighten($dark-color, 15%);
-      border-radius: 0.5rem;
-    }
-  }
-}
-
-.expert-rating-breakup .meter span {
-  display: block;
-  height: 100%;
-  background-color: $primary-color;
-  border-radius: 0.5rem;
 }
 
 @import 'mobile';

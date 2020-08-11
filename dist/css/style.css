@@ -121,8 +121,13 @@ ul {
   border-radius: 0.3rem;
 }
 
-.card p {
+.card p,
+.card h3 {
   text-align: left;
+}
+
+.card h2 {
+  padding: 0 6rem;
 }
 
 nav {
@@ -211,9 +216,11 @@ nav .search-btn {
 .container .col-left .infographics,
 .container .col-left .sticky-dummy,
 .container .col-left .statistics,
+.container .col-left .post-pub,
 .container .col-right .infographics,
 .container .col-right .sticky-dummy,
-.container .col-right .statistics {
+.container .col-right .statistics,
+.container .col-right .post-pub {
   align-self: baseline;
   position: sticky;
   top: 4rem;
@@ -231,6 +238,17 @@ nav .search-btn {
   width: 90%;
 }
 
+.container .col-left a,
+.container .col-right a {
+  color: #333;
+}
+
+.container .col-left a:hover,
+.container .col-right a:hover {
+  color: #007575;
+  font-weight: bold;
+}
+
 .container .col-left table,
 .container .col-right table {
   border-spacing: 20px;
@@ -244,6 +262,114 @@ nav .search-btn {
 .container .col-left table td:nth-child(1),
 .container .col-right table td:nth-child(1) {
   border-right: 1px solid #333;
+}
+
+.container .col-left .publication-expert-rating,
+.container .col-left .publication-user-rating,
+.container .col-right .publication-expert-rating,
+.container .col-right .publication-user-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container .col-left .publication-expert-rating .rating,
+.container .col-left .publication-user-rating .rating,
+.container .col-right .publication-expert-rating .rating,
+.container .col-right .publication-user-rating .rating {
+  display: inline-flex;
+  font-family: 'Rowdies', cursive;
+  color: #a19f9f;
+  font-size: 2rem;
+  margin: -1rem;
+}
+
+.container .col-left .publication-expert-rating #pcr1,
+.container .col-left .publication-expert-rating #pcr2,
+.container .col-left .publication-expert-rating #pcr3,
+.container .col-left .publication-expert-rating #pcr4,
+.container .col-left .publication-expert-rating #pcr5,
+.container .col-left .publication-user-rating #pcr1,
+.container .col-left .publication-user-rating #pcr2,
+.container .col-left .publication-user-rating #pcr3,
+.container .col-left .publication-user-rating #pcr4,
+.container .col-left .publication-user-rating #pcr5,
+.container .col-right .publication-expert-rating #pcr1,
+.container .col-right .publication-expert-rating #pcr2,
+.container .col-right .publication-expert-rating #pcr3,
+.container .col-right .publication-expert-rating #pcr4,
+.container .col-right .publication-expert-rating #pcr5,
+.container .col-right .publication-user-rating #pcr1,
+.container .col-right .publication-user-rating #pcr2,
+.container .col-right .publication-user-rating #pcr3,
+.container .col-right .publication-user-rating #pcr4,
+.container .col-right .publication-user-rating #pcr5 {
+  color: red;
+}
+
+.container .col-left .publication-expert-rating #pur1,
+.container .col-left .publication-expert-rating #pur2,
+.container .col-left .publication-expert-rating #pur3,
+.container .col-left .publication-expert-rating #pur4,
+.container .col-left .publication-expert-rating #pur5,
+.container .col-left .publication-expert-rating #pur6,
+.container .col-left .publication-expert-rating #pur7,
+.container .col-left .publication-user-rating #pur1,
+.container .col-left .publication-user-rating #pur2,
+.container .col-left .publication-user-rating #pur3,
+.container .col-left .publication-user-rating #pur4,
+.container .col-left .publication-user-rating #pur5,
+.container .col-left .publication-user-rating #pur6,
+.container .col-left .publication-user-rating #pur7,
+.container .col-right .publication-expert-rating #pur1,
+.container .col-right .publication-expert-rating #pur2,
+.container .col-right .publication-expert-rating #pur3,
+.container .col-right .publication-expert-rating #pur4,
+.container .col-right .publication-expert-rating #pur5,
+.container .col-right .publication-expert-rating #pur6,
+.container .col-right .publication-expert-rating #pur7,
+.container .col-right .publication-user-rating #pur1,
+.container .col-right .publication-user-rating #pur2,
+.container .col-right .publication-user-rating #pur3,
+.container .col-right .publication-user-rating #pur4,
+.container .col-right .publication-user-rating #pur5,
+.container .col-right .publication-user-rating #pur6,
+.container .col-right .publication-user-rating #pur7 {
+  color: red;
+}
+
+.container .col-left .rating-breakup,
+.container .col-right .rating-breakup {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #a19f9f;
+}
+
+.container .col-left .rating-breakup .meter,
+.container .col-right .rating-breakup .meter {
+  flex-basis: 60%;
+  height: 1rem;
+  /* Can be anything */
+  position: relative;
+  background: #a19f9f;
+  border-radius: 0.5rem;
+}
+
+.container .col-left .rating-breakup .meter span,
+.container .col-right .rating-breakup .meter span {
+  display: block;
+  height: 100%;
+  background-color: #51567b;
+  border-radius: 0.5rem;
+}
+
+.container .col-left .expert-rating-breakup .meter span,
+.container .col-right .expert-rating-breakup .meter span {
+  display: block;
+  height: 100%;
+  background-color: #007575;
+  border-radius: 0.5rem;
 }
 
 .container .col-middle {
@@ -261,6 +387,16 @@ nav .search-btn {
   width: 100%;
   height: auto;
   border-radius: 0.3rem;
+}
+
+.container .col-middle img {
+  width: 80%;
+}
+
+.container .col-middle ol li {
+  text-align: left;
+  padding-left: 3rem;
+  margin-left: 1rem;
 }
 
 .container .col-middle .post-info {
@@ -323,82 +459,6 @@ nav .search-btn {
 .profile-banner .affiliation h3,
 .profile-banner .affiliation h2 {
   text-align: right;
-}
-
-.publication-expert-rating,
-.publication-user-rating {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.publication-expert-rating .rating,
-.publication-user-rating .rating {
-  display: inline-flex;
-  font-family: 'Rowdies', cursive;
-  color: #a19f9f;
-  font-size: 2rem;
-  margin: -1rem;
-}
-
-.publication-expert-rating #pcr1,
-.publication-expert-rating #pcr2,
-.publication-expert-rating #pcr3,
-.publication-expert-rating #pcr4,
-.publication-expert-rating #pcr5,
-.publication-user-rating #pcr1,
-.publication-user-rating #pcr2,
-.publication-user-rating #pcr3,
-.publication-user-rating #pcr4,
-.publication-user-rating #pcr5 {
-  color: red;
-}
-
-.publication-expert-rating #pur1,
-.publication-expert-rating #pur2,
-.publication-expert-rating #pur3,
-.publication-expert-rating #pur4,
-.publication-expert-rating #pur5,
-.publication-expert-rating #pur6,
-.publication-expert-rating #pur7,
-.publication-user-rating #pur1,
-.publication-user-rating #pur2,
-.publication-user-rating #pur3,
-.publication-user-rating #pur4,
-.publication-user-rating #pur5,
-.publication-user-rating #pur6,
-.publication-user-rating #pur7 {
-  color: red;
-}
-
-.rating-breakup {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border-bottom: 1px solid #a19f9f;
-}
-
-.rating-breakup .meter {
-  flex-basis: 60%;
-  height: 1rem;
-  /* Can be anything */
-  position: relative;
-  background: #a19f9f;
-  border-radius: 0.5rem;
-}
-
-.rating-breakup .meter span {
-  display: block;
-  height: 100%;
-  background-color: #51567b;
-  border-radius: 0.5rem;
-}
-
-.expert-rating-breakup .meter span {
-  display: block;
-  height: 100%;
-  background-color: #007575;
-  border-radius: 0.5rem;
 }
 
 @media all and (max-width: 800px) {

@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Taqzila</title>
+    <title>Trending</title>
   </head>
 
   <body>
@@ -24,7 +24,7 @@
 
       <div class="links">
         <ul>
-          <li class="current">
+          <li>
             <a href="index.html"
               ><i class="fas fa-scroll"></i>
               <span class="hide-sm"> Feed</span>
@@ -38,7 +38,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="current">
             <a href="trending.html"
               ><i class="fab fa-gripfire"></i>
               <span class="hide-sm"> Trending</span>
@@ -115,67 +115,29 @@
 
       <div class="col-middle">
         <div id="card1" class="card">
-          <h3>
-            Pushing the envelope: Switzerland's approach to unlocking hidden hydropower potential
-          </h3>
-          <div class="card-inner">
-            <div>
-              <p><strong>Authors:</strong> Name1, Name2 & Name3</p>
-              <p><strong>Topic:</strong> Renewable energy, hydropower</p>
-            </div>
-            <div>
-              <p><strong>LOGOS</strong></p>
-            </div>
-          </div>
-          <br />
-          <div class="video-wrapper">
-            <video src="img/video.mp4" controls></video>
-          </div>
-          <div class="post-info">
-            <div class="critic-rating">
-              <h5>Critic Rating</h5>
-              <div class="rating">
-                <h5 id="rating1" class="rating-bars">I</h5>
-                <h5 id="rating2" class="rating-bars">I</h5>
-                <h5 id="rating3" class="rating-bars">I</h5>
-                <h5 id="rating4" class="rating-bars">I</h5>
-                <h5 id="rating5" class="rating-bars">I</h5>
-                <h5 id="rating6" class="rating-bars">I</h5>
-                <h5 id="rating7" class="rating-bars">I</h5>
-                <h5 id="rating8" class="rating-bars">I</h5>
-                <h5 id="rating9" class="rating-bars">I</h5>
-                <h5 id="rating10" class="rating-bars">I</h5>
-              </div>
-            </div>
-
-            <div class="user-rating">
-              <h5>User Rating</h5>
-              <div class="rating">
-                <h5 id="rating1" class="rating-bars">I</h5>
-                <h5 id="rating2" class="rating-bars">I</h5>
-                <h5 id="rating3" class="rating-bars">I</h5>
-                <h5 id="rating4" class="rating-bars">I</h5>
-                <h5 id="rating5" class="rating-bars">I</h5>
-                <h5 id="rating6" class="rating-bars">I</h5>
-                <h5 id="rating7" class="rating-bars">I</h5>
-                <h5 id="rating8" class="rating-bars">I</h5>
-                <h5 id="rating9" class="rating-bars">I</h5>
-                <h5 id="rating10" class="rating-bars">I</h5>
-              </div>
-            </div>
-
-            <div class="info-component">
-              <i class="fas fa-thumbs-up hide-sm"></i><span class="hide-sm"> 100 </span>
-            </div>
-            <div class="info-component">
-              <i class="fas fa-thumbs-down hide-sm"></i><span class="hide-sm"> 40 </span>
-            </div>
-            <div class="info-component">
-              <button class="btn">
-                <i class="fas fa-users"></i><span class="hide-sm"> Discussions </span>
-              </button>
-            </div>
-            <div class="info-component"><span> 233 views</span></div>
+          <div class="select-stream">
+            <label><h3>Pick a stream for trending posts:</h3></label>
+            <select name="stream" id="stream">
+              <option>Aeronautical Engineering</option>
+              <option>Aerospace Engineering</option>
+              <option>Aircraft Maintenance Engineering</option>
+              <option>Bio-Medical Engineering</option>
+              <option>Chemical Engineering</option>
+              <option>Civil Engineering</option>
+              <option>Computer Science and Engineering</option>
+              <option>Electrical and Electronics Engineering</option>
+              <option>Electrical Engineering</option>
+              <option>Electronics and Communication Engineering</option>
+              <option>Electronics and Instrumentation Engineering</option>
+              <option>Genetic Engineering</option>
+              <option>Instrumentation and Control Engineering</option>
+              <option>Instrumentation Engineering</option>
+              <option>Mechanical Engineering</option>
+              <option>Metallurgical Engineering</option>
+              <option>Petrochemical Engineering</option>
+              <option>Petroleum Engineering</option>
+              <option>Textile Engineering</option>
+            </select>
           </div>
         </div>
 

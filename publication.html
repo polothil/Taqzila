@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/2ade1d298b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Publication</title>
+  </head>
+
+  <body>
+    <nav class="navbar bg-dark">
+      <div class="logo hide-sm">
+        <a href="index.html">
+          <img src="img/book unlock -ve icon.svg " alt="Logo" />
+        </a>
+      </div>
+
+      <div class="links">
+        <ul>
+          <li>
+            <a href="index.html"
+              ><i class="fas fa-scroll"></i>
+              <span class="hide-sm"> Feed</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="profile.html"
+              ><i class="fas fa-user"></i>
+              <span class="hide-sm"> Profile</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="trending.html"
+              ><i class="fab fa-gripfire"></i>
+              <span class="hide-sm"> Trending</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="messages.html"
+              ><i class="far fa-comments"></i>
+              <span class="hide-sm"> Messages</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="discussion.html"
+              ><i class="fas fa-users"></i>
+              <span class="hide-sm"> Discussions</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="login.html"
+              ><i class="fas fa-sign-out-alt"></i>
+              <span class="hide-sm"> Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="search">
+        <input class="hide-sm" type="text" id="search" placeholder="Topic, Author or Keywords" />
+        <button class="search-btn hide-sm" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Container split starts here-->
+      <div class="col-left card hide-sm">
+        <div class="content-left">
+          <h3>Expert Rating</h3>
+          <div class="publication-expert-rating">
+            <div class="rating">
+              <h5 id="pcr1" class="rating-bars">I</h5>
+              <h5 id="pcr2" class="rating-bars">I</h5>
+              <h5 id="pcr3" class="rating-bars">I</h5>
+              <h5 id="pcr4" class="rating-bars">I</h5>
+              <h5 id="pcr5" class="rating-bars">I</h5>
+              <h5 id="pcr6" class="rating-bars">I</h5>
+              <h5 id="pcr7" class="rating-bars">I</h5>
+              <h5 id="pcr8" class="rating-bars">I</h5>
+              <h5 id="pcr9" class="rating-bars">I</h5>
+              <h5 id="pcr10" class="rating-bars">I</h5>
+            </div>
+            <div class="rating-number">
+              <h3>5/10</h3>
+            </div>
+          </div>
+          <br />
+          <div class="expert-rating-breakup">
+            <p><strong>Novelty</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 50%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>5/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Abstract</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 100%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>10/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Subject Focus</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 60%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>6/10</strong></p>
+              </div>
+            </div>
+            <p><strong>In-depth Analysis</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 40%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>4/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Scientific Impact</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 70%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>7/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Societal Impact</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 70%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>7/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Accessibility</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 70%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>7/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Reproducibility</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 70%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>7/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Language</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 70%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>7/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Presentation</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 70%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>7/10</strong></p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <h3>User Rating</h3>
+          <div class="publication-user-rating">
+            <div class="rating">
+              <h5 id="pur1" class="rating-bars">I</h5>
+              <h5 id="pur2" class="rating-bars">I</h5>
+              <h5 id="pur3" class="rating-bars">I</h5>
+              <h5 id="pur4" class="rating-bars">I</h5>
+              <h5 id="pur5" class="rating-bars">I</h5>
+              <h5 id="pur6" class="rating-bars">I</h5>
+              <h5 id="pur7" class="rating-bars">I</h5>
+              <h5 id="pur8" class="rating-bars">I</h5>
+              <h5 id="pur9" class="rating-bars">I</h5>
+              <h5 id="pur10" class="rating-bars">I</h5>
+            </div>
+            <div class="rating-number">
+              <h3>7/10</h3>
+            </div>
+          </div>
+          <br />
+          <div class="user-rating-breakup">
+            <p><strong>Novelty</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 50%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>5/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Abstract</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 100%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>10/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Subject Focus</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 60%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>6/10</strong></p>
+              </div>
+            </div>
+            <p><strong>In-depth Analysis</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 40%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>4/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Scientific Impact</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 70%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>7/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Societal Impact</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 70%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>7/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Accessibility</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 70%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>7/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Reproducibility</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 70%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>7/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Language</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 70%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>7/10</strong></p>
+              </div>
+            </div>
+            <p><strong>Presentation</strong></p>
+            <div class="rating-breakup">
+              <div class="meter">
+                <span style="width: 70%;"></span>
+              </div>
+              <div class="meter-number">
+                <p><strong>7/10</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post-pub">
+          <br />
+          <h3>Actions</i></h3>
+          <br />
+            <a href="review.html" class="btn">
+              <h4>Review this work</h4>
+            </a>
+            <br />
+            <a href="citation.html" class="btn">
+              <h4>Cite this work</h4>
+            </a>
+            <br />
+            <a href="pdf.html" class="btn">
+              <h4>Generate PDF</h4>
+              <i class="far fa-file-pdf fa-2x text-primary"></i>
+            </a>
+        </div>
+      </div>
+
+      <div class="col-middle">
+        <div id="card1" class="card">
+          <h2>
+            Pushing the envelope: Switzerland's approach to unlocking hidden hydropower potential
+          </h2>
+          <div class="card-inner">
+            <div>
+              <p><strong>Authors:</strong> Name1, Name2 & Name3</p>
+              <p><strong>Keywords:</strong> Renewable energy, hydropower</p>
+            </div>
+            <div>
+              <p><strong>LOGOS</strong></p>
+            </div>
+          </div>
+          <br />
+          <div class="video-wrapper">
+            <video src="img/video.mp4" controls></video>
+          </div>
+          <br />
+          <h3>
+            Abstract - <span><i class="fas fa-volume-up"></i></span>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus provident ea aut
+            quia libero, cumque deserunt voluptatum voluptatem magnam quaerat obcaecati officiis
+            dolor illo, sint ipsum perferendis placeat cum. Odit corrupti facilis et ipsam
+            repudiandae ad quos ex praesentium voluptate quaerat amet quisquam ab placeat totam
+            molestiae sapiente, dolores accusamus sed qui! Ea esse quas beatae, nesciunt, quisquam
+            aspernatur fugit recusandae ex quae labore eius voluptas eum quia soluta deserunt
+            consequatur iusto, fugiat accusamus harum quam quos. Ab est perspiciatis veniam, esse
+            eaque sed odit, dolores cupiditate, reiciendis delectus hic illum quia dolore facilis
+            sit obcaecati iste. Dignissimos omnis quo exercitationem numquam doloremque a, ad
+            expedita sint maiores quidem? Quidem pariatur rem dignissimos unde iusto voluptas
+            corporis totam, omnis soluta veniam numquam minima cupiditate ullam perferendis quam cum
+            tempore ipsum explicabo sit neque? Ipsum nostrum, voluptatum quos tempore voluptates in
+            qui pariatur adipisci aliquam labore ab dignissimos recusandae atque? Ipsam fugiat sequi
+            quod nihil, optio qui voluptas vero, dignissimos sint, incidunt earum nobis quae officia
+            molestiae omnis sapiente alias laudantium. Esse, assumenda saepe! Ipsam fugiat atque
+            nesciunt porro consequatur nemo aperiam! Consequuntur, enim! Error, iusto. Maxime
+            laborum quibusdam aut culpa sapiente, iusto quae, tempore nemo quos est, sequi magnam
+            natus!
+          </p>
+          <br />
+          <h3>
+            Methodology - <span><i class="fas fa-volume-up"></i></span>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam sapiente quis rem
+            repellat repellendus ipsa alias perferendis laboriosam. Facilis sint laborum suscipit
+            expedita dicta odit, blanditiis tempore iste, quas modi deserunt ab, repellendus
+            dignissimos necessitatibus explicabo voluptatem debitis vel illo ut molestias quam amet
+            totam quos! Esse in ut vero temporibus repudiandae maiores velit laborum veniam dicta
+            mollitia! Officiis sint dolores autem, veniam harum amet nulla cumque laborum sed eius.
+            Sapiente laboriosam fugit maxime libero accusamus cum molestiae rem. Quis veritatis
+            optio, voluptatem porro cupiditate omnis natus eos aliquam beatae corrupti nesciunt
+            officia placeat? Aperiam vero laborum minima accusamus eligendi!
+          </p>
+          <br />
+          <img src="img/physics.jpg" alt="Methodology img" />
+          <p>
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cupiditate quia sit et
+            voluptatem dolorum ut quas beatae, velit itaque quod nihil expedita quae soluta
+            reprehenderit voluptatibus, blanditiis quibusdam quis, commodi non rem excepturi.
+            Laboriosam, delectus deserunt consectetur eum, animi odio totam voluptatem dolor iste,
+            quibusdam eligendi est itaque labore explicabo fugiat libero nisi unde optio repudiandae
+            veritatis aut eveniet reprehenderit. Dolores deserunt asperiores voluptatem soluta.
+            Obcaecati tempora corrupti at molestiae, eveniet ex laudantium! Ullam veritatis
+            repellendus, iusto consequatur numquam ipsum magnam quae modi impedit? Delectus ipsum
+            non voluptas ut? Minima dolore voluptas excepturi, quos laudantium possimus quaerat
+            culpa animi enim similique voluptatibus reprehenderit fuga perspiciatis ut deserunt quod
+            corrupti consequatur exercitationem nihil commodi cumque sunt quasi eveniet. Debitis
+            distinctio consectetur assumenda quasi nam amet porro ipsa doloribus possimus enim sit,
+            neque eligendi culpa vitae voluptatibus odio nobis exercitationem a! Inventore placeat,
+            commodi amet unde mollitia saepe modi suscipit et cum. Odit illo aspernatur perspiciatis
+            sit autem assumenda deserunt maxime necessitatibus voluptate est quae optio, praesentium
+            fugiat vero aliquam, magni id, velit accusantium consequatur. Minus quia necessitatibus
+            molestiae incidunt consectetur. Beatae necessitatibus voluptatem neque quaerat odio,
+            quasi placeat! Dolorum architecto omnis quam numquam facere vero incidunt, commodi at
+            beatae totam neque, ea quae voluptate ipsam maiores consequuntur magni in laboriosam
+            sint delectus officia. Quis laudantium iusto quaerat atque? Alias earum praesentium
+            architecto minima unde! Recusandae minus, blanditiis esse quod magni vero veniam at.
+            Sapiente culpa ad reiciendis velit in quasi voluptate quam. Similique tempore pariatur
+            adipisci iusto sint laudantium veritatis id enim tempora, quasi repellendus nobis sequi
+            aperiam sit recusandae in dignissimos minima quae placeat at error dolor obcaecati earum
+            facilis. Velit cumque nulla minus deleniti reprehenderit accusamus deserunt quod,
+            doloremque quas accusantium sed fuga similique voluptatibus ipsa recusandae obcaecati
+            expedita veniam. Incidunt officia necessitatibus vel doloremque mollitia dolores totam?
+          </p>
+          <br />
+          <div class="video-wrapper">
+            <video src="img/video.mp4" controls></video>
+          </div>
+          <br />
+          <h3>
+            Results & Discussions - <span><i class="fas fa-volume-up"></i></span>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit ducimus odio
+            natus odit harum ab, voluptate consequuntur asperiores recusandae in quasi earum!
+            Repellat iusto cumque quos rerum, assumenda explicabo delectus iure possimus hic maxime
+            nulla praesentium enim? Nemo at saepe sunt inventore nihil animi, sequi nostrum eaque
+            fugit distinctio vel aspernatur. Officia perspiciatis ad perferendis accusamus! Quas
+            labore non vitae cum harum minus fuga exercitationem quasi architecto. Officia
+            doloremque quasi est sint ipsa omnis laborum, nostrum a aliquam accusantium nihil, ab
+            hic voluptatem. Repellendus a deleniti, quidem illo ratione voluptatibus quas fuga vero
+            ea at voluptatum inventore, explicabo labore sequi nisi maiores cum sapiente
+            exercitationem facilis ullam, iure suscipit? Consectetur voluptate voluptatibus ab
+            beatae distinctio. Assumenda itaque excepturi qui unde harum cum amet molestias ex quasi
+            obcaecati alias deleniti, corporis asperiores tenetur voluptatibus. Adipisci eaque
+            eveniet veniam laboriosam sunt quisquam minima, aliquid consequuntur. Error repellendus
+            dolor, repellat fugit vitae dolore nobis odio veritatis fuga at molestias totam ab
+            deserunt, illum officia molestiae quidem sit, ea placeat inventore illo praesentium
+            eveniet commodi. Perspiciatis sequi, quidem voluptatibus voluptate delectus velit,
+            dolore molestiae tempore veniam quaerat amet iusto nostrum, consequatur officiis
+            molestias. Architecto veritatis, ab excepturi maiores blanditiis illo neque id modi
+            laborum.
+          </p>
+          <br />
+          <img src="img/graph.svg" alt="results img" />
+          <br /><br />
+          <h3>
+            Conclusion - <span><i class="fas fa-volume-up"></i></span>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit ducimus odio
+            natus odit harum ab, voluptate consequuntur asperiores recusandae in quasi earum!
+            Repellat iusto cumque quos rerum, assumenda explicabo delectus iure possimus hic maxime
+            nulla praesentium enim? Nemo at saepe sunt inventore nihil animi, sequi nostrum eaque
+            fugit distinctio vel aspernatur. Officia perspiciatis ad perferendis accusamus! Quas
+            labore non vitae cum harum minus fuga exercitationem quasi architecto. Officia
+            doloremque quasi est sint ipsa omnis laborum, nostrum a aliquam accusantium nihil, ab
+            hic voluptatem. Repellendus a deleniti, quidem illo ratione voluptatibus quas fuga vero
+            ea at voluptatum inventore, explicabo labore sequi nisi maiores cum sapiente
+            exercitationem facilis ullam, iure suscipit? Consectetur voluptate voluptatibus ab
+            beatae distinctio. Assumenda itaque excepturi qui unde harum cum amet molestias ex quasi
+            obcaecati alias deleniti, corporis asperiores tenetur voluptatibus. Adipisci eaque
+            eveniet veniam laboriosam sunt quisquam minima, aliquid consequuntur. Error repellendus
+            dolor, repellat fugit vitae dolore nobis odio veritatis fuga at molestias totam ab
+            deserunt, illum officia molestiae quidem sit, ea placeat inventore illo praesentium
+            eveniet commodi. Perspiciatis sequi, quidem voluptatibus voluptate delectus velit,
+            dolore molestiae tempore veniam quaerat amet iusto nostrum, consequatur officiis
+            molestias. Architecto veritatis, ab excepturi maiores blanditiis illo neque id modi
+            laborum.
+          </p>
+          <br />
+          <h3>
+            Acknowledgement -
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas totam voluptatem
+            accusantium culpa nemo quas officiis natus, expedita ex! Inventore, maiores delectus
+            nobis blanditiis, nostrum similique, numquam ea minus iste impedit possimus tenetur
+            neque velit quia architecto voluptatibus repellendus!
+          </p>
+          <br />
+          <h3>
+            References -
+          </h3>
+          <ol>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eaque.</li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deleniti nulla
+              doloremque quam culpa voluptatibus iusto, incidunt dolore nostrum deserunt.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sint iste corrupti
+              consequatur, libero laborum.
+            </li>
+            <li>
+              Perspiciatis sequi, quidem voluptatibus voluptate delectus velit, dolore molestiae
+              tempore veniam quaerat amet iusto nostrum.
+            </li>
+            <li>
+              Beatae necessitatibus voluptatem neque quaerat odio, quasi placeat! Dolorum architecto
+              omnis quam numquam facere vero incidunt, commodi at beatae totam neque, ea quae
+              voluptate ipsam maiores consequuntur magni in laboriosam sint delectus officia.
+            </li>
+            <li>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus magnam culpa
+              optio saepe at similique iusto quia sunt?
+            </li>
+          </ol>
+
+          <!-- <div class="post-info">
+            <div class="critic-rating">
+              <h5>Critic Rating</h5>
+              <div class="rating">
+                <h5 id="rating1" class="rating-bars">I</h5>
+                <h5 id="rating2" class="rating-bars">I</h5>
+                <h5 id="rating3" class="rating-bars">I</h5>
+                <h5 id="rating4" class="rating-bars">I</h5>
+                <h5 id="rating5" class="rating-bars">I</h5>
+                <h5 id="rating6" class="rating-bars">I</h5>
+                <h5 id="rating7" class="rating-bars">I</h5>
+                <h5 id="rating8" class="rating-bars">I</h5>
+                <h5 id="rating9" class="rating-bars">I</h5>
+                <h5 id="rating10" class="rating-bars">I</h5>
+              </div>
+            </div>
+
+            <div class="user-rating">
+              <h5>User Rating</h5>
+              <div class="rating">
+                <h5 id="rating1" class="rating-bars">I</h5>
+                <h5 id="rating2" class="rating-bars">I</h5>
+                <h5 id="rating3" class="rating-bars">I</h5>
+                <h5 id="rating4" class="rating-bars">I</h5>
+                <h5 id="rating5" class="rating-bars">I</h5>
+                <h5 id="rating6" class="rating-bars">I</h5>
+                <h5 id="rating7" class="rating-bars">I</h5>
+                <h5 id="rating8" class="rating-bars">I</h5>
+                <h5 id="rating9" class="rating-bars">I</h5>
+                <h5 id="rating10" class="rating-bars">I</h5>
+              </div>
+            </div>
+
+            <div class="info-component">
+              <i class="fas fa-thumbs-up hide-sm"></i><span class="hide-sm"> 100 </span>
+            </div>
+            <div class="info-component">
+              <i class="fas fa-thumbs-down hide-sm"></i><span class="hide-sm"> 40 </span>
+            </div>
+            <div class="info-component">
+              <button class="btn">
+                <i class="fas fa-users"></i><span class="hide-sm"> Discussions </span>
+              </button>
+            </div>
+            <div class="info-component"><span> 233 views</span></div>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="col-right card hide-sm">
+        <div class="content-right">
+          <h3>Advertisements</h3>
+          <br />
+          <img src="img/ad sample.svg" alt="ad image" />
+        </div>
+        <div class="sticky-dummy">
+          <br />
+          <h3>Sticky Dummy</h3>
+          <br />
+          <!-- <img src="img/pie chart.svg" alt="Pie chart" /> -->
+          <img src="img/graph squares.svg" alt="Graph Squares" />
+          <!-- <img src="img/graph.svg" alt="Graph" /> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

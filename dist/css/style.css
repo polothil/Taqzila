@@ -121,8 +121,7 @@ ul {
   border-radius: 0.3rem;
 }
 
-.card p,
-.card h3 {
+.card p {
   text-align: left;
 }
 
@@ -374,6 +373,35 @@ nav .search-btn {
 
 .container .col-middle {
   flex-basis: 50%;
+}
+
+.container .col-middle h3 {
+  text-align: left;
+}
+
+.container .col-middle a {
+  color: #333;
+}
+
+.container .col-middle a:hover {
+  color: #007575;
+  font-weight: bold;
+}
+
+.container .col-middle .select-stream {
+  display: flex;
+}
+
+.container .col-middle .select-stream select {
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-left: 2rem;
+  padding: 0.3rem 1rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: hidden;
 }
 
 .container .col-middle .card-inner {

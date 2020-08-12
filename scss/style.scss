@@ -39,8 +39,7 @@ ul {
   margin-bottom: 1rem;
   border-radius: 0.3rem;
 
-  p,
-  h3 {
+  p {
     text-align: left;
   }
 
@@ -243,6 +242,36 @@ nav {
 
   .col-middle {
     flex-basis: 50%;
+
+    h3 {
+      text-align: left;
+    }
+
+    a {
+      color: #333;
+
+      &:hover {
+        color: $primary-color;
+        font-weight: bold;
+      }
+    }
+
+    .select-stream {
+      display: flex;
+
+      select {
+        background-color: #ffffff;
+        border: 0;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        margin-left: 2rem;
+        padding: 0.3rem 1rem;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        // appearance: none;
+        outline: hidden;
+      }
+    }
 
     .card-inner {
       margin-top: 1rem;

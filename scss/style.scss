@@ -44,7 +44,7 @@ ul {
   }
 
   h2 {
-    padding: 0 6rem;
+    padding: 0 3rem;
   }
 }
 
@@ -256,23 +256,6 @@ nav {
       }
     }
 
-    .select-stream {
-      display: flex;
-
-      select {
-        background-color: #ffffff;
-        border: 0;
-        border-radius: 0.5rem;
-        font-size: 1rem;
-        margin-left: 2rem;
-        padding: 0.3rem 1rem;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        // appearance: none;
-        outline: hidden;
-      }
-    }
-
     .card-inner {
       margin-top: 1rem;
       display: flex;
@@ -365,6 +348,25 @@ nav {
     h2 {
       text-align: right;
     }
+  }
+}
+
+// Trending Stream selection
+
+.select-stream {
+  display: flex;
+  justify-content: center;
+
+  select {
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin: 0 2rem;
+    padding: 0.3rem 1rem;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    // appearance: none;
   }
 }
 

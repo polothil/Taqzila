@@ -126,7 +126,7 @@ ul {
 }
 
 .card h2 {
-  padding: 0 6rem;
+  padding: 0 3rem;
 }
 
 nav {
@@ -388,22 +388,6 @@ nav .search-btn {
   font-weight: bold;
 }
 
-.container .col-middle .select-stream {
-  display: flex;
-}
-
-.container .col-middle .select-stream select {
-  background-color: #ffffff;
-  border: 0;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  margin-left: 2rem;
-  padding: 0.3rem 1rem;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  outline: hidden;
-}
-
 .container .col-middle .card-inner {
   margin-top: 1rem;
   display: flex;
@@ -489,6 +473,22 @@ nav .search-btn {
   text-align: right;
 }
 
+.select-stream {
+  display: flex;
+  justify-content: center;
+}
+
+.select-stream select {
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: 0 2rem;
+  padding: 0.3rem 1rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
 @media all and (max-width: 800px) {
   .hide-sm {
     display: none;
@@ -510,8 +510,20 @@ nav .search-btn {
   .profile-banner .affiliation h3 {
     text-align: center;
   }
+  .select-stream {
+    display: inline-block;
+  }
+  .select-stream select {
+    margin: 0;
+  }
+  .select-stream h3 {
+    text-align: center;
+  }
   .container .col-middle {
     flex-basis: 90%;
+  }
+  .container .col-middle h2 {
+    font-size: 1.2rem;
   }
   .container .rating {
     font-size: 0.7rem;

@@ -30,10 +30,28 @@
     }
   }
 
+  // Trending Stream Selection
+
+  .select-stream {
+    display: inline-block;
+
+    select {
+      margin: 0;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  }
+
   // .container {
   .container {
     .col-middle {
       flex-basis: 90%;
+
+      h2 {
+        font-size: 1.2rem;
+      }
     }
 
     .rating {
